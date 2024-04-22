@@ -1,0 +1,21 @@
+{
+  "name": "mz-web-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm -r --filter ./packages run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm version && pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
+  },
+  "keywords": [],
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
+}
